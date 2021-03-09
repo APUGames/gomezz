@@ -78,11 +78,8 @@ public class Player : MonoBehaviour
             // get new y velocity based on controllable variable
             Vector2 jumpVelocity = new Vector2(0.0f, jumpSpeed);
             playerCharacter.velocity += jumpVelocity;
+            AudioSource.PlayClipAtPoint(jumpSound, Camera.main.transform.position);
 
-      //      if(Jump)
-      //      {
-       //         audioSource.PlayOneShot(jumpSound, 1.0F);
-        //    }
         }
     }
     private void Climb()

@@ -9,7 +9,7 @@ public class Pickup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        FindObjectOfType<GameSession>().ProcessPlayerScore;
+        FindObjectOfType<GameSession>().ProcessPlayerScore(coinValue);
         AudioSource.PlayClipAtPoint(coinPickSFX, Camera.main.transform.position);
 
         Destroy(gameObject);
