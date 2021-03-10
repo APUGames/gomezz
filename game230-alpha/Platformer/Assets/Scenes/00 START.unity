@@ -571,7 +571,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1373992189}
-  - component: {fileID: 1373992192}
   - component: {fileID: 1373992191}
   - component: {fileID: 1373992190}
   m_Layer: 9
@@ -1125,102 +1124,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!82 &1373992192
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373992188}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c1ce16c5c08aff84c8ab0a848c80b17b, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.3
-  m_Pitch: 0.7
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &1470966977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1531,7 +1434,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 1997531118}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ce3b4f8bb288b464a8f3eff1157cfe0e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1539,9 +1442,71 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths: []
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1997531122}
+    m_ColliderPaths:
+    - - X: 400000000
+        Y: 250000000
+      - X: 310000000
+        Y: 250000000
+      - X: 310000000
+        Y: 240000000
+      - X: 400000000
+        Y: 240000000
+    - - X: 410000000
+        Y: 240000000
+      - X: 400000000
+        Y: 240000000
+      - X: 400000000
+        Y: 190000000
+      - X: 410000000
+        Y: 190000000
+    - - X: 310000000
+        Y: 240000000
+      - X: 300000000
+        Y: 240000000
+      - X: 300000000
+        Y: 190000000
+      - X: 310000000
+        Y: 190000000
+    - - X: 380000000
+        Y: 220000000
+      - X: 330000000
+        Y: 220000000
+      - X: 330000000
+        Y: 210000000
+      - X: 380000000
+        Y: 210000000
+    - - X: 400000000
+        Y: 190000000
+      - X: 310000000
+        Y: 190000000
+      - X: 310000000
+        Y: 180000000
+      - X: 400000000
+        Y: 180000000
   m_CompositePaths:
-    m_Paths: []
+    m_Paths:
+    - - {x: 39.999973, y: 24}
+      - {x: 39.999973, y: 25}
+      - {x: 31, y: 24.999971}
+      - {x: 31.000029, y: 24}
+    - - {x: 40.999973, y: 19}
+      - {x: 40.999973, y: 24}
+      - {x: 40, y: 23.999971}
+      - {x: 40.00003, y: 19}
+    - - {x: 30.999971, y: 19}
+      - {x: 30.999971, y: 24}
+      - {x: 30, y: 23.999971}
+      - {x: 30.000029, y: 19}
+    - - {x: 37.999973, y: 21}
+      - {x: 37.999973, y: 22}
+      - {x: 33, y: 21.999971}
+      - {x: 33.00003, y: 21}
+    - - {x: 39.999973, y: 18}
+      - {x: 39.999973, y: 19}
+      - {x: 31, y: 18.999971}
+      - {x: 31.000029, y: 18}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &1997531121
@@ -1577,7 +1542,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
