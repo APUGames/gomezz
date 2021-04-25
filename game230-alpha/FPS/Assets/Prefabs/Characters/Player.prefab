@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 4358510483180655228}
   - component: {fileID: 4358510483169016218}
   - component: {fileID: 4358510483167925268}
+  - component: {fileID: 2568299130072626654}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -244,6 +245,20 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4358510483179211896}
   m_Enabled: 1
+--- !u!114 &2568299130072626654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358510483179211896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &4358510483179211898
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +273,7 @@ GameObject:
   - component: {fileID: 4358510483169016216}
   - component: {fileID: 7647214657616244243}
   - component: {fileID: 1633744952328382507}
+  - component: {fileID: 5724918578633522029}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -406,6 +422,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUi: {fileID: 0}
+--- !u!114 &5724918578633522029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358510483179211898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3cb435b1e201354ca2e9d3599ea19e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootstepsEventPath: event:/Footsteps
+  JumpingEventPath: event:/Jump
+  MaterialParameterName: Footsteps
+  SpeedParameterName: 
+  JumpOrLandParameterName: 
+  StepDistance: 0.65
+  RayDistance: 6
+  StartRunningTime: 0.5
+  JumpInputName: Jump
+  MaterialTypes:
+  - Mud
+  - Dirt
+  - Concrete
+  - Grass
+  - Water
+  DefaultMaterialValue: 0
 --- !u!114 &4358510484146784095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,6 +656,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7af077a2a34f26f4990d05d54e23886f, type: 2}
+    - target: {fileID: 2300006, guid: b5d3572f7b6bfd143b39ce51cf6bde2e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2300012, guid: b5d3572f7b6bfd143b39ce51cf6bde2e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
